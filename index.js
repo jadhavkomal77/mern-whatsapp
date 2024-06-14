@@ -24,7 +24,7 @@ app.use("/api/user", userProtected, require("./routes/user.route"))
 
 
 app.use("*", (req, res) => {
-    res.status(404).json({ message: "No resource found" })
+    res.status(404).json({ message: "resours not found" })
 })
 
 app.use((err, req, res, next) => {
